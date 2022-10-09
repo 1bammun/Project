@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: fantasy, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
     min-height: 100vh;
-    background-image: linear-gradient(to right, white, black);
+    background-image: linear-gradient(to right, rgb(163, 153, 207), rgb(19, 5, 78));
     color: black;
 }
 
@@ -67,7 +68,7 @@ p {
     max-width: 850px;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(139, 138, 138);
+    background-color: rgb(138, 138, 138);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -78,7 +79,7 @@ p {
     width: 100%;
     margin: 0 auto;
     display: block;
-    background-color: rgb(136, 134, 134);
+    background-color: rgb(128, 128, 128);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -185,4 +186,73 @@ button {
 }
 #clear:active{
     opacity: 0.5;
+}
+
+@media screen and (max-width: 1023px) {
+    .container{
+        max-width: 650px;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        width: 85%;
+    }
+
+    label {
+        position: relative;
+        align-self: center;
+    }
+    
+    .input-action {
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    input {
+        padding: 0.5rem;
+        color: black;
+        font-size: 0.8rem;
+        outline: none;
+        border-radius: 5px;
+        width: 75%;
+        align-self: center;
+    }
+
+    sub{
+        margin: -10px;
+    }
+
+    span{
+        margin: 10%;
+    }
+
+    .action {
+        margin-top: 35px;        
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    h4{
+        font-size: 1rem;
+        margin: auto;
+    }
+
+    p {
+        font-size: 0.7rem;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 319px) {
+    .container{
+        width: 100%;
+    }
+
+    input {
+        width: 85%;
+    }
 }
